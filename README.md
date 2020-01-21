@@ -1,4 +1,4 @@
-# egg-nos
+# akos-egg-nos
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -27,7 +27,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-nos --save
+$ npm i akos-egg-nos --save
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ $ npm i egg-nos --save
 // {app_root}/config/plugin.js
 exports.nos = {
   enable: true,
-  package: 'egg-nos',
+  package: 'akos-egg-nos',
 };
 ```
 
