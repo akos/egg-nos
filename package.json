@@ -12,8 +12,8 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "node-uuid": "^1.4.8",
-    "nos-node-sdk": "^0.0.5"
+    "nos-node-sdk": "^0.0.5",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
