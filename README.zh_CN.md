@@ -1,4 +1,4 @@
-# egg-nos
+# akos-egg-nos
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -49,7 +49,7 @@ egg-nos 版本 | egg 1.x
 // config/plugin.js
 exports.nos = {
   enable: true,
-  package: 'egg-nos',
+  package: 'akos-egg-nos',
 };
 ```
 
