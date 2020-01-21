@@ -7,4 +7,5 @@ run/
 test/
 .DS_Store
 *.swp
+config.default.js
 
