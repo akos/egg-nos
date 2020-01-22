@@ -62,16 +62,16 @@ see [config/config.default.js](config/config.default.js) for more detail.
 {
   statusCode: 200,
   headers: {
-    date: 'Tue, 21 Jan 2020 07:10:12 GMT',
+    'date: 'Tue, 21 Jan 2020 07:10:12 GMT',
     'content-type': 'application/javascript',
     'content-length': '0',
-    connection: 'close',
+    'connection: 'close',
     'x-nos-request-id': '5245eb29-fb6e-4e38-b30d-a15494f55b91',
     'x-nos-requesttype': 'PutObject',
     'x-nos-object-name': 'home_3fa36420c26b4f469c7bbc7ef1594402.js',
-    etag: '7026e4bda37cf12fb33b15548ae645be',
+    'etag: '7026e4bda37cf12fb33b15548ae645be',
     'x-nos-storage-class': 'STANDARD',
-    server: 'nos/v1.0.0'
+    'server': 'nos/v1.0.0'
   },
   file_key: 'home_3fa36420c26b4f469c7bbc7ef1594402.js'//文件名
 }
