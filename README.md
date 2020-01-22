@@ -3,18 +3,18 @@
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-nos.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-nos
-[travis-image]: https://img.shields.io/travis/eggjs/egg-nos.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-nos
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-nos.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/akos-egg-nos.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/akos-egg-nos
+[travis-image]: https://img.shields.io/travis/eggjs/akos-egg-nos.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/akos-egg-nos
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/akos-egg-nos.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/eggjs/egg-nos?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-nos.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-nos
-[snyk-image]: https://snyk.io/test/npm/egg-nos/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-nos
-[download-image]: https://img.shields.io/npm/dm/egg-nos.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-nos
+[david-image]: https://img.shields.io/david/eggjs/akos-egg-nos.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/akos-egg-nos
+[snyk-image]: https://snyk.io/test/npm/akos-egg-nos/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/akos-egg-nos
+[download-image]: https://img.shields.io/npm/dm/akos-egg-nos.svg?style=flat-square
+[download-url]: https://npmjs.org/package/akos-egg-nos
 
 <!--
 Description here.
@@ -55,25 +55,30 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
-```js
+```
 // 上传文件至nos
  const result = await this.app.nos.uploadFile(__dirname + '/home.js');
 返回:
 {
-  statusCode: 200,
-  headers: {
-    'date: 'Tue, 21 Jan 2020 07:10:12 GMT',
-    'content-type': 'application/javascript',
-    'content-length': '0',
-    'connection: 'close',
-    'x-nos-request-id': '5245eb29-fb6e-4e38-b30d-a15494f55b91',
-    'x-nos-requesttype': 'PutObject',
-    'x-nos-object-name': 'home_3fa36420c26b4f469c7bbc7ef1594402.js',
-    'etag: '7026e4bda37cf12fb33b15548ae645be',
-    'x-nos-storage-class': 'STANDARD',
-    'server': 'nos/v1.0.0'
-  },
-  file_key: 'home_3fa36420c26b4f469c7bbc7ef1594402.js'//文件名
+    "code":200,
+    "result":{
+        "statusCode":200,
+        "headers":{
+            "date":"Wed, 22 Jan 2020 03:09:52 GMT",
+            "content-type":"text/plain",
+            "content-length":"0",
+            "connection":"close",
+            "x-nos-request-id":"b0f88003-f2cb-4a46-a01e-cfd7acede85f",
+            "x-nos-requesttype":"PutObject",
+            "x-nos-object-name":"test_dfb57d12fe50453ca10e9ae06ef6d643.txt",
+            "etag":"c8e0a8b69178a6f9c8f2d926be0aff18",
+            "x-nos-storage-class":"STANDARD",
+            "server":"nos/v1.0.0"
+        },
+        "file_key":"test_dfb57d12fe50453ca10e9ae06ef6d643.txt"
+    },
+    "requestId":"39c4031d-15c7-4e6f-bf8a-4d43a86e1f91",
+    "machine":"lgfshrdeMacBook-Pro.local"
 }
 // 获取文件地址
  const key = 'test_358.txt';
