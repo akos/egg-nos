@@ -1,10 +1,6 @@
 # akos-egg-nos
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/egg-nos.svg?style=flat-square
@@ -60,6 +56,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 <!-- example here -->
 ```js
+// 上传文件至nos
  const result = await this.app.nos.uploadFile(__dirname + '/home.js');
 返回:
 {
@@ -78,6 +75,10 @@ see [config/config.default.js](config/config.default.js) for more detail.
   },
   file_key: 'home_3fa36420c26b4f469c7bbc7ef1594402.js'//文件名
 }
+// 获取文件地址
+ const key = 'test_358.txt';
+ const result = this.app.nos.getPrivateObjectUrl('testnos', key, 10 * 60 * 1000);
+ eg: result-> https://testnos.nos-eastchina1.126.net/test_358.txt?Signature=xxx&Expires=1579662403&NOSAccessKeyId=xxx
 ```
 
 ## Questions & Suggestions
